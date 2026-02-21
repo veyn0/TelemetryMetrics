@@ -20,14 +20,14 @@ public class MetricSample {
     private UUID serviceId;
 
     @Column(name = "timestamp", nullable = false)
-    private long timestamp;
+    private double timestamp;
 
     @Column(name = "value", nullable = false)
-    private long value;
+    private double value;
 
     protected MetricSample() {}
 
-    public MetricSample(UUID id, UUID serviceId, long timestamp, long value) {
+    public MetricSample(UUID id, UUID serviceId, double timestamp, double value) {
         this.id = id;
         this.serviceId = serviceId;
         this.timestamp = timestamp;
@@ -36,6 +36,6 @@ public class MetricSample {
 
     public UUID getId() { return id; }
     public UUID getServiceId() { return serviceId; }
-    public long getTimestamp() { return timestamp; }
-    public long getValue() { return value; }
+    public double getTimestamp() { return timestamp; }
+    public double getValue() { return value; }
 }

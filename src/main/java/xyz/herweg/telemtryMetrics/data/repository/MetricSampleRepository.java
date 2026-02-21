@@ -10,5 +10,5 @@ public interface MetricSampleRepository extends JpaRepository<MetricSample, UUID
 
     List<MetricSample> findAllByServiceId(UUID serviceId);
 
-    List<MetricSample> findAllByServiceIdAndTimestampBetween(UUID serviceId, long fromTs, long toTs);
+    List<MetricSample> findAllByServiceIdAndTimestampBetween(UUID serviceId, double fromTs, double toTs);
 }
