@@ -1,34 +1,32 @@
 Project telemetry_metrics {
   database_type: 'MariaDB'
-  Note: 'Telemtry Metrics'
+  Note: 'Telemetry Metrics'
 }
 
-Table metric_samples {
-  id uuid [primary key]
-  service_id uuid
-  created_at double
+Table telemetry_metric_sample {
+  id char(36) [primary key]
+  service_id char(36)
+  timestamp datetime
   value double
 }
 
-Table services {
-  id uuid [primary key]
-  system_id uuid
-  category_id uuid
-  name varchar
-  created_at double
+Table telemetry_service {
+  id char(36) [primary key]
+  system_id char(36)
+  category_id char(36)
+  name varchar(255)
+  created_at datetime
 }
 
-Table service_categories {
-  id uuid [primary key]
-  name varchar
+Table telemetry_service_category {
+  id char(36) [primary key]
+  name varchar(255)
 }
 
-
-Table systems {
-  id uuid [primary key]
-  specs_id uuid
+Table telemetry_system {
+  id char(36) [primary key]
 }
 
-Ref service_samples: metric_samples.service_id > services.id 
-Ref service_system: systems.id < services.system_id
-Ref service_category: services.category_id > service_categories.id
+Ref telemetry_service_samples: telemetry_metric_sample.service_id > telemetry_service.id
+Ref telemetry_service_system: telemetry_service.system_id > telemetry_system.id
+Ref telemetry_service_category: telemetry_service.category_id > telemetry_service_category.id
