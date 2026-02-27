@@ -38,7 +38,7 @@
     graph_id char(36)
   }
 
-  Table telemetry_status_page_graph_tooltips{
+  Table telemetry_status_page_widget_tooltips{
     id char(36) [primary key]
     widget_id char(36)
     graph_id char(36)
@@ -84,9 +84,9 @@
 
   Ref: "telemetry_status_page_graphs"."id" < "telemetry_status_page_widgets"."graph_id"
 
-  Ref: "telemetry_status_page_widgets"."id" < "telemetry_status_page_graph_tooltips"."widget_id"
+  Ref: "telemetry_status_page_widgets"."id" < "telemetry_status_page_widget_tooltips"."widget_id"
 
-  Ref: "telemetry_status_page_graphs"."id" < "telemetry_status_page_graph_tooltips"."graph_id"
+  Ref: "telemetry_status_page_graphs"."id" < "telemetry_status_page_widget_tooltips"."graph_id"
 
   Ref: "telemetry_status_page_graphs"."datasource_id" < "telemetry_status_page_datasources"."id"
 
