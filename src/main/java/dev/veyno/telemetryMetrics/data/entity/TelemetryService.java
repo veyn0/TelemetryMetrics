@@ -50,4 +50,25 @@ public class TelemetryService {
     public Instant getCreatedAt() {
         return createdAt;
     }
+
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public void setSystemId(UUID systemId) {
+        this.systemId = systemId;
+    }
+
+    public void setCategoryId(UUID categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCreatedAt(Instant createdAt) {
+        this.createdAt = createdAt;
+    }
 }

@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-import dev.veyno.telemetryMetrics.api.internal.dto.IngestTelemetrySamplesRequest;
-import dev.veyno.telemetryMetrics.api.internal.dto.IngestTelemetrySamplesResponse;
+import dev.veyno.telemetryMetrics.data.dto.api.internal.IngestTelemetrySamplesRequest;
+import dev.veyno.telemetryMetrics.data.dto.api.internal.IngestTelemetrySamplesResponse;
 import dev.veyno.telemetryMetrics.data.entity.TelemetryMetricSample;
 import dev.veyno.telemetryMetrics.data.repository.TelemetryMetricSampleRepository;
 

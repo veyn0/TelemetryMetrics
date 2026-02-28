@@ -37,4 +37,17 @@ public class TelemetryStatusPageGraph {
     public String getName() {
         return name;
     }
+
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public void setDatasourceId(UUID datasourceId) {
+        this.datasourceId = datasourceId;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

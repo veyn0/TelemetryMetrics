@@ -78,4 +78,36 @@ public class TelemetryStatusPageLayout {
     public int getGraphStyle() {
         return graphStyle;
     }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public void setWidgetId(UUID widgetId) {
+        this.widgetId = widgetId;
+    }
+
+    public void setStatusPageId(UUID statusPageId) {
+        this.statusPageId = statusPageId;
+    }
+
+    public void setPosX(int posX) {
+        this.posX = posX;
+    }
+
+    public void setPosY(int posY) {
+        this.posY = posY;
+    }
+
+    public void setFromTime(Instant fromTime) {
+        this.fromTime = fromTime;
+    }
+
+    public void setToTime(Instant toTime) {
+        this.toTime = toTime;
+    }
+
+    public void setGraphStyle(int graphStyle) {
+        this.graphStyle = graphStyle;
+    }
 }

@@ -1,4 +1,4 @@
-package dev.veyno.telemetryMetrics.api.internal.dto;
+package dev.veyno.telemetryMetrics.data.dto.api.internal;
 
 import java.time.Instant;
 

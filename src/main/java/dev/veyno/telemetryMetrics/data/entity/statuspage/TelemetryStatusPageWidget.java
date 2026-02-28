@@ -30,4 +30,12 @@ public class TelemetryStatusPageWidget {
     public UUID getGraphId() {
         return graphId;
     }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public void setGraphId(UUID graphId) {
+        this.graphId = graphId;
+    }
 }

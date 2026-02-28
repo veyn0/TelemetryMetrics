@@ -54,4 +54,20 @@ public class TelemetryStatusPageDatasource {
     public CompositionType getCompositionType() {
         return compositionType;
     }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
+    }
+
+    public void setServiceId(UUID serviceId) {
+        this.serviceId = serviceId;
+    }
+
+    public void setCompositionType(CompositionType compositionType) {
+        this.compositionType = compositionType;
+    }
 }

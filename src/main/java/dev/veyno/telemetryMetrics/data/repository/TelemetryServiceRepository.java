@@ -11,4 +11,6 @@ public interface TelemetryServiceRepository extends JpaRepository<TelemetryServi
     List<TelemetryService> findAllBySystemId(UUID systemId);
 
     List<TelemetryService> findAllByCategoryId(UUID categoryId);
+
+    List<TelemetryService> findBySystemIdAndCategoryId(UUID systemId, UUID categoryId);
 }
