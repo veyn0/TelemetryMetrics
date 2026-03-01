@@ -69,8 +69,9 @@
     status_page_id char(36)
     pos_x integer
     pos_y integer
-    from_time datetime
-    to_time datetime
+    scale_x integer
+    scale_y integer
+    duration integer
     graph_style integer
   }
 
